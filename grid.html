@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        nav{
+            border: 1px solid;
+            margin: 5px;
+            height: 50px;
+        }
+        footer{
+            border: 1px solid;
+            margin: 5px;
+
+            height: 25px;
+        }
+        .main{
+            border: 1px solid;
+            margin: 5px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+        .left{
+            border: 1px solid;
+            margin: 5px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+        .right{
+            border: 1px solid;
+            margin: 5px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+        .container{
+            margin: 5px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 150px 350px 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav><h1>navbar</h1></nav>
+
+    <div class="container">
+        <div class="left">
+            sidebar-left
+        </div>
+
+        <main class="main">
+            main content
+        </main>
+
+        <div class="right">
+            sidebar
+        </div>
+    </div>
+
+    <footer>Footer</footer>
+</body>
+</html>
