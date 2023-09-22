@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+
+
+
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .right {
+            background-color: aqua;
+        }
+
+        h1,
+        p {
+            margin: 10px;
+        }
+
+        .main {
+            background-color: rgb(210, 207, 207);
+        }
+
+        .footer {
+            background-color: rgb(89, 89, 229);
+        }
+
+        .navbar {
+            background-color: blueviolet;
+        }
+
+
+        /* phone layout */
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+
+            .item1 {
+                grid-column: 1/13;
+                grid-row: 2/3;
+            }
+
+            .item2 {
+                grid-column: 1/13;
+                grid-row: 3/4;
+            }
+
+            .item3 {
+                grid-column: 1/13;
+                grid-row: 4/5;
+            }
+
+            .item4 {
+                grid-column: 1/13;
+                grid-row: 5/6;
+            }
+
+            .right {
+                grid-column: 1/13;
+                grid-row: 9/10;
+            }
+
+            .main {
+                grid-column: 1/13;
+                grid-row: 6/9;
+            }
+        }
+
+        /* tablet view - layout */
+        @media only screen and (min-width: 601px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+
+            .item1 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            .item2 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            .item3 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+
+            .item4 {
+                grid-column: 1/2;
+                grid-row: 5/6;
+            }
+
+            .right {
+                grid-row: 8/10;
+                grid-column: 1/13;
+            }
+
+            .main {
+                grid-column: 2/13;
+                grid-row: 2/8;
+            }
+        }
+
+        /* desktop/laptop layout */
+        @media only screen and (min-width: 992px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+
+            .item1 {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .item2 {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+
+            .item3 {
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+
+            .item4 {
+                grid-column: 1/3;
+                grid-row: 5/6;
+            }
+
+            .right {
+                grid-column: 11/13;
+                grid-row: 2/10;
+            }
+
+            .main {
+                grid-column: 3/11;
+                grid-row: 2/10;
+            }
+
+            .footer {
+                grid-column: 1/13;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>NavBar</h1>
+        </div>
+
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+
+        <div class="main">
+            <h1>Sample title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis natus, amet, impedit excepturi
+                consequuntur perferendis fugiat velit totam magni laudantium sapiente ullam nostrum beatae nemo? Culpa
+                saepe iure recusandae.</p>
+        </div>
+
+        <div class="right">
+            Sidebar - Right
+        </div>
+
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>
