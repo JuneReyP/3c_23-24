@@ -10,11 +10,22 @@
     <button ><a href="index.html">click me</a></button>
     <button onclick="demo()">Change background Color</button>
     <p id="hello"></p>
-    <button onclick="hello(document.getElementById('fname').value, document.getElementById('lName').value,document.getElementById('address').value)">Say Hi!</button>
+    <button onclick="myFunction()">Say Hi!</button>
 
     <input type="text" id="fname" placeholder="Enter FirstName">
     <input type="text" id="lName" placeholder="Enter Lastname">
     <input type="text" id="address" placeholder="ENter your address">
+<hr>
+    <fieldset>
+        <legend>Simple calculator</legend>
+        <input type="text" id="num1" placeholder="Enter first number"><br><br>
+        <input type="text" id="num2" placeholder="Enter second number"><br><br>
+        <input type="button" value="+" id="add">
+        <input type="button" value="-" id="subtract">
+        <input type="button" value="*" id="multiply">
+        <input type="button" value="/" id="divide">
+        <h2 id="answer">Answer</h2>
+    </fieldset>
 
     <script src="demo.js"></script>
 </body>

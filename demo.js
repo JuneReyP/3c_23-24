@@ -8,11 +8,11 @@ var
 let
 const
  */
-var num1 = '12';
+// var num1 = '12';
 // var num1 = 54;
 // alert(num1)
-let num2 = 10
-    num2 = 12;
+// let num2 = 10
+//     num2 = 12;
 const num3 = true
 
 /**
@@ -74,27 +74,137 @@ There are different types of JavaScript operators:
     (condition)? ifTrue : ifFalse;
 
 
+//  */
+// let a = true;
+// //alert(!a);
+
+// function demo(){
+//     // alert('This is a function');
+//     var elemID = document.getElementById('demo');
+
+//     elemID.style.backgroundColor = 'grey';
+//     elemID.style.border = '1px solid';
+// }
+
+// function addTwoNum(num1, num2){
+//     document.write(num1 + num2);
+// }
+
+// // addTwoNum(45, 5)
+
+// function hello(fname, lname, address){
+//     let myElem = document.getElementById('hello');
+
+//     myElem.innerHTML = 'I am ' + fname + ' ' + lname + ' and I lived in ' + address;
+// }
+
+// function myFunction(){
+//     let firstName = document.getElementById('fname').value;
+//     let lastName = document.getElementById('lName').value;
+//     let address = document.getElementById('address').value;
+
+//     hello(firstName, lastName, address);
+// }
+
+/**
+if
+    if(condition){
+        //code to be executed if the condition is true
+    }
+if else
+if else-if else
+switch case
+    switch(expression){
+        case 1:
+            //code to be executed if the expression is 1
+            break;
+        case 2:
+            //code to be executed if the expression is 2
+            break;
+        case 3:
+            //code to be executed if the expression is 3
+            break;
+        default:
+            //code to be executed if the expression is not 1 or 2 or 3
+    }
+for-loop
+    for(initializer; condition; iterator){
+        //codes to be executed if the condition is true
+    }
+while loop
+
  */
-let a = true;
-//alert(!a);
 
-function demo(){
-    // alert('This is a function');
-    var elemID = document.getElementById('demo');
+// if(1 > 0){
+//     document.write("your codes if true");
+// }
 
-    elemID.style.backgroundColor = 'grey';
-    elemID.style.border = '1px solid';
+// if (1 > 0) {
+//     document.write("your codes if true");
+// } else {
+//     document.write("your codes if false");
+// }
+
+// if (1 < 0) {
+//     document.write("if 1st condition is true");
+//     // if(){
+//     //     if(){
+
+//     //     }
+//     // }
+// } else if(1 < 0){
+//     document.write("if 1st condition is false and 2nd condition is true");
+// }else if(1 != 0 ){
+//     document.write("if all condition are false");
+// }else{
+
+// }
+
+// let exp = '';
+// let num1 = 5;
+// let num2 = 5;
+// switch(exp){
+//     case '+':
+//         let total = num1 + num2
+//         alert(num1 + num2);
+//         if(total%2 == 0){
+//             alert('Even NUmber')
+//         }else(
+//             alert("Odd number")
+//         )
+//         break;
+//     case '-':
+//         alert(num1 - num2);
+//         break;
+//     case '/':
+//         alert(num1 / num2);
+//         break;
+//     case '*':
+//         alert(num1 * num2);
+//         break;
+//     default:
+//         'Invalid';
+// }
+
+// activity: Create a simple calculator that has a function for arithmethic operation using switch-case and functions
+
+// indexed array
+let cars = ["Honda", "Suzuki", "BMW"];
+
+// document.write(cars[0] + ' ');
+// document.write(cars[1] + ' ');
+// document.write(cars[2] + ' ');
+
+for(let i = 0; i < cars.length; i++){
+    document.write(cars[i] + '<br>');
 }
 
-function addTwoNum(num1, num2){
-    document.write(num1 + num2);
-}
-
-// addTwoNum(45, 5)
-
-function hello(fname, lname, address){
-    let myElem = document.getElementById('hello');
-
-    myElem.innerHTML = 'I am ' + fname + ' ' + lname + ' and I lived in ' + address;
-}
-
+/**
+ * i = 0
+ *  cars[0] == Honda
+ * 
+ * i = 1
+ *  cars[1] == Suzuki
+ * i = 2
+ *  cars[2] == BMW
+ */
