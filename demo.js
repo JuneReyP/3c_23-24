@@ -189,15 +189,15 @@ while loop
 // activity: Create a simple calculator that has a function for arithmethic operation using switch-case and functions
 
 // indexed array
-let cars = ["Honda", "Suzuki", "BMW"];
+// let cars = ["Honda", "Suzuki", "BMW"];
 
 // document.write(cars[0] + ' ');
 // document.write(cars[1] + ' ');
 // document.write(cars[2] + ' ');
 
-for(let i = 0; i < cars.length; i++){
-    document.write(cars[i] + '<br>');
-}
+// for(let i = 0; i < cars.length; i++){
+//     document.write(cars[i] + '<br>');
+// }
 
 /**
  * i = 0
@@ -208,3 +208,93 @@ for(let i = 0; i < cars.length; i++){
  * i = 2
  *  cars[2] == BMW
  */
+// multi-dimensional array
+// let myArray = [
+//     [1, 2, 3],//0 1st row
+//     [4, 5, 6],//1 2nd row
+//     [7, 8, 9] //2 3rd row
+// ];
+
+let myArray = [
+    [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ],//0 1st row
+    [
+        [11, 12, 13],
+        [14, 15, 16],
+        [17, 18, 19]
+    ],//1 2nd row
+    [
+        [21, 22, 23], //0
+        [24, 25, 26],
+        [27, 28, 29]
+    ] //2 3rd row
+];
+// alert(myArray[2][0][0]);
+// for (let row = 0; row < myArray.length; row++) {
+
+//     for(let col = 0; col < myArray[row].length; col++){
+//         document.write(myArray[row][col] + ' ');
+//     }
+//     document.write('<br>');
+// }
+for (let row = 0; row < myArray.length; row++) {
+
+    for(let col = 0; col < myArray[row].length; col++){
+
+        for(let data = 0; data < myArray[row][col].length; data++){
+            document.write(myArray[row][col][data] + ' ');
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+}
+//myArray[0][0] = 1
+//myArray[0][1] = 2
+//myArray[0][2] = 3
+// break element
+//myArray[1][0] = 4
+//myArray[1][1] = 5
+//myArray[1][2] = 6
+// break element
+//myArray[2][0] = 7
+//myArray[2][1] = 8
+//myArray[2][2] = 9
+// break element
+
+// while(expression/condition){
+    //if expression/condition is true
+// }
+
+let cars = ["Honda", "Suzuki", "BMW"];
+
+let cnt = 0;
+while(cars.length > cnt){
+    document.write(cars[cnt] + ' ');
+    cnt++;
+}
+
+let user = true;
+while(user){
+
+    let user_input = prompt('Enter your choice: deposit, withdraw, check, logout');
+    switch(user_input){
+        case 'deposit':
+            //codes for deposit
+            break;
+        case 'withdraw':
+            //codes for withdraw
+            break;
+        case 'check':
+            //codes for check balance
+            break;
+        case 'logout':
+            //codes for logout
+            user = false;
+            break;
+        default:
+            //codes for invalid input
+    }
+}
